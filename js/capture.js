@@ -1,5 +1,6 @@
 var capture = {
     getVideo: function(vid){
+        $('#chat').data('pending',vid[0].fullPath);
         navigator.notification.prompt('Nombre del Video',send.videoName,'Nombre',['Nombrar','Cancelar']);
     },
     errorVideo: function(err){
