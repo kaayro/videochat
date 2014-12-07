@@ -8,7 +8,7 @@ var capture = {
     captureVideo: function(){
         window.plugins.videocaptureplus.captureVideo(capture.getVideo,capture.errorVideo,{
             duration:40,
-            frontcamera: true
+            frontcamera: false
         });
     }
 }
