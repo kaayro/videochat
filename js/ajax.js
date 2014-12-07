@@ -1,7 +1,7 @@
 var send = {
     videoName: function(name){
         if(name.buttonIndex == 1){
-            $('#chat').append('<span class="pending" rel="'+$('#chat').data('pending')+'">Respondiendo...</span>');
+            $('#chat').append('<span class="pending" rel="'+$('#chat').data('pending')+'">Respondiendo...</span><br>');
             $.ajax({
                 type: 'POST',
                 url: 'http://carlos.igitsoft.com/apps/test.php',
@@ -10,7 +10,7 @@ var send = {
                 context: $('#chat .pending'),
                 success: function(data){
                     if(data==1)
-                        this.html('<a class="video" href="#" rel="'+this.attr('rel')+'">'+name.input1+'</a>');
+                        this.html('<a class="video" href="#" rel="'+this.attr('rel')+'">'+name.input1+'</a>').removeClass('pending');
                 },
                 error: function(xhr, type){
                     alert('Ajax error!')
