@@ -6,6 +6,9 @@ var capture = {
         navigator.notification.alert('Error: '+err.code,null,'Lo Sentimos','Aceptar');
     },
     captureVideo: function(){
-        navigator.device.capture.captureVideo(capture.getVideo,capture.errorVideo,{duration:140});
+        window.plugins.videocaptureplus.captureVideo(capture.getVideo,capture.errorVideo,{
+            duration:40,
+            frontcamera: true
+        });
     }
 }

@@ -21,9 +21,10 @@
     </author>
     
     <!-- Plugins de phonegap -->
-    <gap:plugin name="org.apache.cordova.media-capture" />
+    <!--gap:plugin name="org.apache.cordova.media-capture" /-->
     <gap:plugin name="org.apache.cordova.dialogs" />
     
     <!-- Plugins de terceros -->
     <gap:plugin name="com.dawsonloudon.videoplayer" />
+    <gap:plugin name="nl.x-services.plugins.videocaptureplus" />
 </widget>
