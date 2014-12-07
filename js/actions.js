@@ -6,9 +6,9 @@ var fn = {
         //Registrar tu número de teléfono
         
         //Grabar Video
-        $('#captureVideo').on('tap',capture.captureVideo);
+        $(document).on('tap','#captureVideo',capture.captureVideo);
         //reproducir videos grabados
-        $('.video').on('tap',fn.playVideo);
+        $(document).on('tap','.video',fn.playVideo);
         //enviar videos
         
         //reproducir videos enviados
@@ -19,4 +19,4 @@ var fn = {
         alert($(this).attr('rel'));
     }
 }
-window.addEventListener('load',fn.ready,false);
+$(fn.ready);
