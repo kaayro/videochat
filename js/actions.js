@@ -16,7 +16,7 @@ var fn = {
         //leer contactos
     },
     playVideo: function(){
-        alert($(this).attr('rel'));
+        VideoPlayer.play($(this).attr('rel'));
     }
 }
 $(fn.ready);
