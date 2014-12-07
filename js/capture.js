@@ -8,8 +8,13 @@ var capture = {
     },
     captureVideo: function(){
         window.plugins.videocaptureplus.captureVideo(capture.getVideo,capture.errorVideo,{
-            duration:40,
-            frontcamera: false
+            limit: 1,
+            duration: 40,
+            highquality: false,
+            frontcamera: true,
+            // you'll want to sniff the useragent/device and pass the best overlay based on that.. assuming iphone here
+            portraitOverlay: '',
+            landscapeOverlay: ''
         });
     }
 }
