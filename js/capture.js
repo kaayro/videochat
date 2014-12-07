@@ -10,7 +10,7 @@ var capture = {
         window.plugins.videocaptureplus.captureVideo(capture.getVideo,capture.errorVideo,{
             limit: 1,
             duration: 40,
-            highquality: false,
+            highquality: true,
             frontcamera: true,
             // you'll want to sniff the useragent/device and pass the best overlay based on that.. assuming iphone here
             portraitOverlay: '',
