@@ -6,13 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="phonegap.js"></script>
         <script src="VideoPlayer.js"></script>
+        <script src="js/actions.js"></script>
+        <script src="js/capture.js"></script>
     </head>
     <body>
         <div class="video">
+            <button id="captureVideo">grabar</button>
         </div>
         <script>
-            document.addEventListener('deviceready',function(){
-                VideoPlayer.play('http://www.w3schools.com/html/mov_bbb.mp4');
+            //document.addEventListener('deviceready',function(){
+                //VideoPlayer.play('http://www.w3schools.com/html/mov_bbb.mp4');
             },false);
         </script>
     </body>
