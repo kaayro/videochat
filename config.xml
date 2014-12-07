@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.phonegap.example"
+    version     = "1.0.0"
+    versionCode = "10" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <preference name="phonegap-version" value="3.3.0" />
+
+    <name>Video Chat</name>
+
+    <description>
+        Un sencillo chat en vídeo 
+    </description>
+
+    <author href="http://carlos.igitsoft.com" email="carlos.c@igitsoft.com">
+        Carlos Celma
+    </author>
+    
+    <!-- Plugins de phonegap -->
+    <gap:plugin name="org.apache.cordova.device" />
+    
+    <!-- Plugins de terceros -->
+    <gap:plugin name="com.dawsonloudon.videoplayer" />
+</widget>
