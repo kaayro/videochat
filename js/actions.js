@@ -6,9 +6,9 @@ var fn = {
         //Registrar tu número de teléfono
         
         //Grabar Video
-        $(document).on('tap','#captureVideo',capture.captureVideo);
+        $(document).on('click','#captureVideo',capture.captureVideo);
         //reproducir videos grabados
-        $(document).on('tap','.video',fn.playVideo);
+        $(document).on('click','.video',fn.playVideo);
         //enviar videos
         
         //reproducir videos enviados
